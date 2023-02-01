@@ -23,7 +23,7 @@ RSpec.describe Task, type: :model do
       end
 
       it 'returns true when the title contains the word laundry' do
-        task = Task.create!(title: 'Clean my clothes', description: 'laundry')
+        task = Task.create!(title: 'laundry', description: 'Clean my clothes')
   
         expect(task.laundry?).to be(true)
       end
